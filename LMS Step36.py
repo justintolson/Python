@@ -21,14 +21,18 @@ counter -= 1
 p = 2 % 4
 
 #6. Use of logical operators: and, or, not
-if number = 3 or number = 6:
-    print("True")
-
-if number = 3 and number > x:
-    print("True")
-
-if number not x:
-    print("False")
+import random
+def get_location():
+    goal = random.choice
+    start = random.choice
+    bad_guy = random.choice
+    
+if goal == start or start == bad_guy:
+    return get_location
+if goal != start and goal != bad_guy:
+    return goal, start, bad_guy
+if goal not start:
+    return goal, start, bad_guy
 
 
 #7. Use of conditional statements: if, elif, else
@@ -43,6 +47,7 @@ else:
 a, b = 2, 4
 while b < 100:
     print("Under 100")
+    b += 1
 
 #9. Use of a for loop
 list = [1, 2, 3, 4, 5]
@@ -52,13 +57,13 @@ for number in list:
 #10. Create a list and iterate through that list using a for loop to print each item out on a new line
 list = [2, 4, 6, 8]
 for number in list:
-    print("This is the number ", + number)
+    print("This is the number ", number)
 
 
 #11. Create a tuple and iterate through it using a for loop to print each item out on a new line
 tuple = (5, 6, 7, 8)
 for number in tuple:
-    print("This is the number ", + number)
+    print("This is the number ", number)
 
 
 #12. Define a function that returns a string variable
