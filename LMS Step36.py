@@ -23,16 +23,18 @@ p = 2 % 4
 #6. Use of logical operators: and, or, not
 import random
 def get_location():
-    goal = random.choice
-    start = random.choice
-    bad_guy = random.choice
+    x = [4, 5, 6, 7, 8]
     
-if goal == start or start == bad_guy:
-    return get_location
-if goal != start and goal != bad_guy:
-    return goal, start, bad_guy
-if goal not start:
-    return goal, start, bad_guy
+    goal = random.choice(x)
+    start = random.choice(x)
+    bad_guy = random.choice(x)
+    
+    if goal == start or start == bad_guy:
+        return get_location()
+    if goal != start and goal != bad_guy:
+        return goal, start, bad_guy
+    if not goal == start:
+        return goal, start, bad_guy
 
 
 #7. Use of conditional statements: if, elif, else
