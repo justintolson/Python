@@ -8,28 +8,36 @@
 
 #
 #Import libraries needed for this function
+
 import os
 import shutil
 
 #Create the function and name the parameters
+
 def file_mover( fromFilepath, toFilepath ):
 
     #Create a for loop search through Folder A
+    
     for files in os.listdir(fromFilepath):
 
         #If any of the files in Folder A end with .txt, have them transferred to Folder B
+        
         if files.endswith('.txt'):
 
             #Join the filepath with the files that to be transferred
+            
             file_source = os.path.join(fromFilepath, files)
 
             file_destination = os.path.join(toFilepath, files)
 
             #shutil.move to transfer the files from Folder A to Folder B
+            
             shutil.move(file_source, file_destination)
 
             #Print which files have been transferred
+            
             print("Copied {} to {}".format(files, toFilepath))
 
-
+#Call the function with the specific filepaths as the arguments
+            
 file_mover("C:/Users/Justin/Desktop/Folder A", "C:/Users/Justin/Desktop/Folder B")
